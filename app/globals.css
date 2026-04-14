@@ -24,3 +24,39 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+:root {
+  --bg: #000000;
+  --card: #020617;
+  --text: #ffffff;
+  --muted: #94a3b8;
+  --accent: #3b82f6; /* mavi */
+}
+
+.light {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #6366f1; /* mor */
+}
+:root {
+  --bg: #020617;
+  --card: #0f172a;
+  --card-soft: rgba(15, 23, 42, 0.65);
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --border: #1e293b;
+  --accent: #3b82f6;
+  --nav: rgba(2, 6, 23, 0.9);
+}
+
+.light {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --card-soft: rgba(255, 255, 255, 0.7);
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #cbd5e1;
+  --accent: #6366f1;
+  --nav: rgba(255, 255, 255, 0.9);
+}
