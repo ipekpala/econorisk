@@ -20,18 +20,34 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-[var(--bg)] text-[var(--text)]`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-[var(--bg)] text-[var(--text)] flex flex-col`}
       >
         <Navbar />
-        <main className="min-h-[calc(100vh-73px)] bg-[var(--bg)] text-[var(--text)]">
+
+        <main className="flex-1 bg-[var(--bg)] text-[var(--text)]">
           {children}
         </main>
+
+        {/* 👇 FOOTER DOĞRU YER */}
+        <footer
+          className="mt-10 border-t py-6 text-center text-sm"
+          style={{ color: "var(--muted)" }}
+        >
+          Built by İpek Pala •
+          <a
+            href="https://github.com/ipekpala"
+            target="_blank"
+            className="ml-1 underline"
+          >
+            GitHub
+          </a>
+        </footer>
       </body>
     </html>
   );
